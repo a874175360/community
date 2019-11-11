@@ -77,4 +77,26 @@ public class QuestionService {
 
         return paginationDTO;
     }
+
+    public QuestionDTO getById(Integer id) {
+        Qusetion qusetion = qusetionMapper.getById(id);
+        QuestionDTO questionDTO = new QuestionDTO();
+        BeanUtils.copyProperties(qusetion,questionDTO);
+        User user = userMapper.findById(qusetion.getCreator());
+        questionDTO.setUser(user);
+        return questionDTO;
+    }
+
+    public void createOrUpdate(Qusetion qusetion) {
+        if (qusetion.getId()==null){
+            //创建
+            qusetion.setGmtCreate(System.currentTimeMillis());
+            qusetion.setGmtModified(qusetion.getGmtCreate());
+            qusetionMapper.create(qusetion);
+        }else {
+            //更新
+            qusetion.setGmtModified(qusetion.getGmtCreate());
+            qusetionMapper.update(qusetion);
+        }
+    }
 }

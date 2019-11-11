@@ -1,12 +1,15 @@
 package life.majiang.community.controller;
 
+import life.majiang.community.dto.QuestionDTO;
 import life.majiang.community.mapper.QusetionMapper;
 import life.majiang.community.model.Qusetion;
 import life.majiang.community.model.User;
+import life.majiang.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -15,17 +18,28 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class PublishController {
     @Autowired
-    private QusetionMapper qusetionMapper;
+    private QuestionService questionService;
+
     @GetMapping("/publish")
     public String publish(){
         return "publish";
     }
 
+    @GetMapping("/publish/{id}")
+    public String edit(@PathVariable(name = "id") Integer id,Model model){
+        QuestionDTO qusetion = questionService.getById(id);
+        model.addAttribute("title",qusetion.getTitle());
+        model.addAttribute("description",qusetion.getDescription());
+        model.addAttribute("tag",qusetion.getTag());
+        model.addAttribute("id",qusetion.getId());
+        return "publish";
+    }
     @PostMapping("/publish")
     private String doPublish(
-            @RequestParam("title") String title,
-            @RequestParam("description") String description,
-            @RequestParam("tag") String tag,
+            @RequestParam(value = "title",required = false) String title,
+            @RequestParam(value = "description",required = false) String description,
+            @RequestParam(value = "tag",required = false) String tag,
+            @RequestParam(value = "id",required = false) Integer id,
             HttpServletRequest request,
             Model model){
         model.addAttribute("title",title);
@@ -55,11 +69,8 @@ public class PublishController {
         qusetion.setDescription(description);
         qusetion.setTag(tag);
         qusetion.setCreator(user.getId());
-        qusetion.setGmtCreate(System.currentTimeMillis());
-        qusetion.setGmtModified(qusetion.getGmtCreate());
-
-        qusetionMapper.create(qusetion);
-
+        qusetion.setId(id);
+        questionService.createOrUpdate(qusetion);
 
         return "redirect:/";
     }
