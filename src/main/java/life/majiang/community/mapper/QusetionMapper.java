@@ -1,33 +1,41 @@
 package life.majiang.community.mapper;
 
-        import life.majiang.community.dto.QuestionDTO;
-        import life.majiang.community.model.Qusetion;
-        import org.apache.ibatis.annotations.*;
-        import org.springframework.stereotype.Component;
-        import org.springframework.stereotype.Service;
+import java.util.List;
+import life.majiang.community.model.Qusetion;
+import life.majiang.community.model.QusetionExample;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.session.RowBounds;
 
-        import java.util.List;
-
-@Mapper
-@Component
 public interface QusetionMapper {
-    @Insert("insert into question(title,description,gmt_create,gmt_modified,creator,tag) values (#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag})")
-    void create(Qusetion question);
+    long countByExample(QusetionExample example);
 
-    @Select("select * from question limit #{offset},#{size}")
-    List<Qusetion> list(@Param(value = "offset") Integer offset,@Param(value = "size") Integer size);
+    int deleteByExample(QusetionExample example);
 
-    @Select("select COUNT(1) FROM question")
-    Integer count();
-    @Select("select * from question where creator = #{userId} limit #{offset},#{size}")
-    List<Qusetion> listByUserId(@Param(value = "userId") Integer userId, @Param(value = "offset") Integer offset,@Param(value = "size") Integer size);
+    int deleteByPrimaryKey(Integer id);
 
-    @Select("select COUNT(1) FROM question where creator = #{userId}")
-    Integer countByUserId(@Param(value = "userId") Integer userId);
+    int insert(Qusetion record);
 
-    @Select("select * from question where id = #{id}")
-    Qusetion getById(@Param(value = "id") Integer id);
+    int insertSelective(Qusetion record);
 
-    @Update("update question set title=#{title},description=#{description},gmt_modified=#{gmtModified},tag=#{tag} where id = #{id}")
-    void update(Qusetion qusetion);
+    List<Qusetion> selectByExampleWithBLOBsWithRowbounds(QusetionExample example, RowBounds rowBounds);
+
+    List<Qusetion> selectByExampleWithBLOBs(QusetionExample example);
+
+    List<Qusetion> selectByExampleWithRowbounds(QusetionExample example, RowBounds rowBounds);
+
+    List<Qusetion> selectByExample(QusetionExample example);
+
+    Qusetion selectByPrimaryKey(Integer id);
+
+    int updateByExampleSelective(@Param("record") Qusetion record, @Param("example") QusetionExample example);
+
+    int updateByExampleWithBLOBs(@Param("record") Qusetion record, @Param("example") QusetionExample example);
+
+    int updateByExample(@Param("record") Qusetion record, @Param("example") QusetionExample example);
+
+    int updateByPrimaryKeySelective(Qusetion record);
+
+    int updateByPrimaryKeyWithBLOBs(Qusetion record);
+
+    int updateByPrimaryKey(Qusetion record);
 }
