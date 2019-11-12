@@ -55,7 +55,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+    public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO =new PaginationDTO();
         QusetionExample example = new QusetionExample();
         example.createCriteria()
@@ -92,7 +92,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(Long id) {
         Qusetion qusetion = qusetionMapper.selectByPrimaryKey(id);
         if (qusetion==null){
             throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
@@ -127,7 +127,7 @@ public class QuestionService {
         }
     }
 
-    public void incView(Integer id) {
+    public void incView(Long id) {
         Qusetion qusetion = new Qusetion();
         qusetion.setId(id);
         qusetion.setViewCount(1);

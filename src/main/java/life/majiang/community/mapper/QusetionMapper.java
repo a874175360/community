@@ -11,7 +11,7 @@ public interface QusetionMapper {
 
     int deleteByExample(QusetionExample example);
 
-    int deleteByPrimaryKey(Integer id);
+    int deleteByPrimaryKey(Long id);
 
     int insert(Qusetion record);
 
@@ -25,7 +25,7 @@ public interface QusetionMapper {
 
     List<Qusetion> selectByExample(QusetionExample example);
 
-    Qusetion selectByPrimaryKey(Integer id);
+    Qusetion selectByPrimaryKey(Long id);
 
     int updateByExampleSelective(@Param("record") Qusetion record, @Param("example") QusetionExample example);
 
