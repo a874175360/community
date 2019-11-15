@@ -10,6 +10,7 @@ import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.Qusetion;
 import life.majiang.community.model.QusetionExample;
 import life.majiang.community.model.User;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class QuestionService {
@@ -27,7 +29,6 @@ public class QuestionService {
     @Autowired
     QusetionExtMapper qusetionExtMapper;
     public PaginationDTO list(Integer page, Integer size) {
-
         PaginationDTO paginationDTO =new PaginationDTO();
         Integer totalCount = (int)qusetionMapper.countByExample(new QusetionExample());
         paginationDTO.setPagination(totalCount,page,size);
@@ -40,7 +41,9 @@ public class QuestionService {
             page=paginationDTO.getTotalPage();
         }
         Integer offset =size*(page-1);
-        List<Qusetion> questionlist = qusetionMapper.selectByExampleWithRowbounds(new QusetionExample(),new RowBounds(offset,size));
+        QusetionExample example = new QusetionExample();
+        example.setOrderByClause("gmt_create desc");
+        List<Qusetion> questionlist = qusetionMapper.selectByExampleWithRowbounds(example,new RowBounds(offset,size));
         List<QuestionDTO> questionDTOSList =new ArrayList<>();
         for (Qusetion qusetion : questionlist) {
             User user = userMapper.selectByPrimaryKey(qusetion.getCreator());
@@ -120,8 +123,8 @@ public class QuestionService {
             QusetionExample qusetionExample = new QusetionExample();
             qusetionExample.createCriteria()
                     .andIdEqualTo(qusetion.getId());
-            int i = qusetionMapper.updateByExampleSelective(updatequsetion,new QusetionExample());
-            if (i !=1){
+            int i = qusetionMapper.updateByExampleSelective(updatequsetion,qusetionExample);
+            if (i != 1){
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
@@ -132,5 +135,24 @@ public class QuestionService {
         qusetion.setId(id);
         qusetion.setViewCount(1);
         qusetionExtMapper.incView(qusetion);
+    }
+
+    public List<QuestionDTO> selectRelated(QuestionDTO queryDTO) {
+        if (StringUtils.isBlank(queryDTO.getTag()))
+        {
+            return new ArrayList<>();
+        }
+        String regexpTag = StringUtils.replace(queryDTO.getTag(), ",", "|");
+        Qusetion qusetion = new Qusetion();
+        qusetion.setId(queryDTO.getId());
+        qusetion.setTag(regexpTag);
+
+        List<Qusetion> qusetions = qusetionExtMapper.selectRelated(qusetion);
+        List<QuestionDTO> qusetionDTOS = qusetions.stream().map(q -> {
+            QuestionDTO questionDTO = new QuestionDTO();
+            BeanUtils.copyProperties(q,questionDTO);
+            return questionDTO;
+        }).collect(Collectors.toList());
+        return qusetionDTOS;
     }
 }

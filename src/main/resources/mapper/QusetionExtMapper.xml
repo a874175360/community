@@ -19,4 +19,14 @@
     view_count = view_count + #{viewCount,jdbcType=INTEGER}
     where id = #{id}
   </update>
+  <update id="incCommentCount" parameterType="life.majiang.community.model.Qusetion">
+    update question
+    set
+    comment_count = comment_count + #{commentCount,jdbcType=INTEGER}
+    where id = #{id}
+  </update>
+
+  <select id="selectRelated" parameterType="life.majiang.community.model.Qusetion" resultMap="BaseResultMap">
+    select * from question where id !=#{id} and tag regexp #{tag}
+  </select>
 </mapper>

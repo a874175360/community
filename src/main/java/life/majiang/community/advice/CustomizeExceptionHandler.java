@@ -21,14 +21,15 @@ public class CustomizeExceptionHandler {
     @ExceptionHandler(Exception.class)
     Object handle(HttpServletRequest request, Throwable e, Model model, HttpServletResponse response) {
         String contentType = request.getContentType();
-        if ("application/json".equals(contentType)){
+        if (contentType.contains("application/json")){
             //返回json
             ResultDTO resultDTO;
             if (e instanceof CustomizeException){
                 resultDTO= ResultDTO.errorof((CustomizeException)e);
             }else {
                 resultDTO= ResultDTO.errorof(CustomizeErrorCode.SYS_ERROR);
-            }try {
+            }
+            try {
                 response.setContentType("application/json");
                 response.setStatus(200);
                 response.setCharacterEncoding("UTF-8");

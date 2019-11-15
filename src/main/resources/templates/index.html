@@ -11,8 +11,17 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="js/jquery-1.12.4.js" type="application/javascript" th:src="@{js/jquery.js}"></script>
     <script src="js/bootstrap.min.js"  type="application/javascript" th:src="@{js/bootstrap.min.js}"></script>
-
 </head>
+<script type="application/javascript">
+    window.onload = function () {
+        var  a = window.localStorage.getItem("closable");
+        if (a=="true"){
+            window.close();
+            window.localStorage.removeItem("closable");
+            window.re
+        }
+    }
+</script>
 <body>
 <div th:replace="~{navigation::nav}"></div>
 <div class="container-fluid main">
