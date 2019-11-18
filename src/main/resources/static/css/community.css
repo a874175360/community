@@ -22,7 +22,6 @@ body{
     color: #999;
 }
 .community-menu {
-    display: block;
     margin-top: 5px;
     color: #999;
     font-size: 13px;
@@ -73,4 +72,14 @@ body{
 }
 .img-content{
     width: 100%;
+}
+.publish-tag-tab{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.publish-tag-tab .label-info{
+    white-space: normal;
+    margin: 5px 5px;
+    display: inline-block;
+
 }
