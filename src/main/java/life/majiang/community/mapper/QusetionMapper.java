@@ -1,6 +1,8 @@
 package life.majiang.community.mapper;
 
 import java.util.List;
+
+import life.majiang.community.dto.QuestionQueryDTO;
 import life.majiang.community.model.Qusetion;
 import life.majiang.community.model.QusetionExample;
 import org.apache.ibatis.annotations.Param;
@@ -38,4 +40,5 @@ public interface QusetionMapper {
     int updateByPrimaryKeyWithBLOBs(Qusetion record);
 
     int updateByPrimaryKey(Qusetion record);
+
 }

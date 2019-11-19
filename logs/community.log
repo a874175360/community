@@ -1,0 +1,5 @@
+2019-11-19 15:07:58.678  INFO 136552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-19 15:07:58.809  INFO 136552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-19 15:07:59.790  INFO 136552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-19 15:07:59.934  INFO 136552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-19 15:07:59.940  INFO 136552 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 6.438 seconds (JVM running for 9.008)

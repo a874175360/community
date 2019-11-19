@@ -2,6 +2,7 @@ package life.majiang.community.service;
 
 import life.majiang.community.dto.PaginationDTO;
 import life.majiang.community.dto.QuestionDTO;
+import life.majiang.community.dto.QuestionQueryDTO;
 import life.majiang.community.exception.CustomizeErrorCode;
 import life.majiang.community.exception.CustomizeException;
 import life.majiang.community.mapper.QusetionExtMapper;
@@ -28,9 +29,20 @@ public class QuestionService {
     QusetionMapper qusetionMapper;
     @Autowired
     QusetionExtMapper qusetionExtMapper;
-    public PaginationDTO list(Integer page, Integer size) {
+    public PaginationDTO list(String search,Integer page, Integer size) {
+
+        if (StringUtils.isNotBlank(search))
+        {
+            String regexpTag = StringUtils.replace(search, " ", "|");
+        }
+
+
         PaginationDTO paginationDTO =new PaginationDTO();
-        Integer totalCount = (int)qusetionMapper.countByExample(new QusetionExample());
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+
+        Integer totalCount = qusetionExtMapper.countBySearch(questionQueryDTO);
+
         paginationDTO.setPagination(totalCount,page,size);
 
         if (page<1){
@@ -40,10 +52,18 @@ public class QuestionService {
         if (page>paginationDTO.getTotalPage()){
             page=paginationDTO.getTotalPage();
         }
+
+
         Integer offset =size*(page-1);
+        if (offset <0){
+            offset =0;
+        }
+
         QusetionExample example = new QusetionExample();
         example.setOrderByClause("gmt_create desc");
-        List<Qusetion> questionlist = qusetionMapper.selectByExampleWithRowbounds(example,new RowBounds(offset,size));
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setPage(offset);
+        List<Qusetion> questionlist = qusetionExtMapper.selectBySearch(questionQueryDTO);
         List<QuestionDTO> questionDTOSList =new ArrayList<>();
         for (Qusetion qusetion : questionlist) {
             User user = userMapper.selectByPrimaryKey(qusetion.getCreator());
