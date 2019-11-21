@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" th:href="@{css/bootstrap-theme.min.css}">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" th:href="@{css/community.css}">
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="js/jquery-1.12.4.js" type="application/javascript" th:src="@{js/jquery.js}"></script>
-    <script src="js/bootstrap.min.js"  type="application/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script src="js/jquery-1.12.4.js" type="application/javascript" th:src="@{/js/jquery.js}"></script>
+    <script src="js/bootstrap.min.js"  type="application/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script src="/js/moment.js"  type="application/javascript" th:src="@{/js/moment.js}"></script>
+    <script type="application/javascript" th:src="@{/js/test.js}"></script>
 </head>
 <script type="application/javascript">
     window.onload = function () {
@@ -26,51 +28,48 @@
 <div th:replace="~{navigation::nav}"></div>
 <div class="container-fluid main">
     <div class="row">
-        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-            <h3><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>发现</h3><hr/>
-            <div class="media" th:each=" question:${pagination.data}">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 mediarow">
+            <h3><span class="glyphicon glyphicon-list-alt faxian" aria-hidden="true"></span>发现</h3><hr/>
+            <div class="media" th:each="question : ${pagination.data}">
                 <div class="media-left">
                     <a href="#">
                         <img class="media-object img-rounded"
-                             th:src="${question.user.avatarUrl}"
-                             src="https://avatars2.githubusercontent.com/u/57342026?v=4">
+                             th:src="${question.user.avatarUrl}">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading" ><a th:text="${question.title}" th:href="@{'/question/'+${question.id}}"></a></h4>
-                    <span th:text="${question.description}"></span>&nbsp
-                    <span class="text-desc">
-                        <span th:text="${question.commentCount}"></span>个回复&nbsp•
-                        <span th:text="${question.viewCount}"></span>次浏览&nbsp•
-                        <span th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span>
-                    </span>
+                    <h4 class="media-heading">
+                        <a th:href="@{'/question/'+ ${question.id}}" th:text="${question.title}"></a>
+                    </h4>
+                    <span class="text-desc"><span th:text="${question.commentCount}"></span> 个回复 • <span
+                            th:text="${question.viewCount}"></span> 次浏览 • <span
+                            th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
                 </div>
-
             </div>
-            <nav aria-label="Page navigation" style="float: right">
+            <nav class="fenyelan" aria-label="Page navigation" style="float: right">
                 <ul class="pagination">
                     <li th:if="${pagination.showFirstPage}">
-                        <a th:href="@{/(page=1,search=${search})}" aria-label="First">
-                            <span aria-hidden="true">&lt;&lt;</span>
-                        </a>
+                    <a aria-label="First" onclick="showNext(this)" th:data-id="${1}">
+                        <span aria-hidden="true">&lt;&lt;</span>
+                    </a>
                     </li>
                     <li th:if="${pagination.showPrevious}">
-                        <a href="#" th:href="@{/(page=${(pagination.page)-1},search=${search})}" aria-label="Previous">
-                            <span aria-hidden="true">&lt;</span>
+                        <a  aria-label="Previous">
+                            <span aria-hidden="true" onclick="showNext(this)" th:data-id="${(pagination.page)-1}">&lt;</span>
                         </a>
                     </li>
                     <li th:each=" page: ${pagination.pages}" th:class="${pagination.page==page}?'active':''">
-                        <a  th:text="${page}" th:href="@{/(page=${page},search=${search})}">
-                        </a>
+                        <a  th:text="${page}" onclick="showNext(this)" th:data-id="${page}"></a>
                     </li>
+                    <!--th:href="@{/(page=${(pagination.page)+1},search=${search})}"-->
                     <li th:if="${pagination.showNext}">
-                        <a href="#" th:href="@{/(page=${(pagination.page)+1},search=${search})}" aria-label="Next">
-                            <span aria-hidden="true">&gt;</span>
+                        <a  aria-label="Next">
+                            <span aria-hidden="true" onclick="showNext(this)" th:data-id="${pagination.page+1}">&gt;</span>
                         </a>
                     </li>
                     <li th:if="${pagination.showEndPage}">
-                        <a href="#" th:href="@{/(page=${pagination.getTotalPage()},search=${search})}" aria-label="Next">
-                            <span aria-hidden="true">&gt;&gt;</span>
+                        <a  aria-label="Next">
+                            <span aria-hidden="true" onclick="showNext(this)" th:data-id="${(pagination.totalPage)}">&gt;&gt;</span>
                         </a>
                     </li>
                 </ul>

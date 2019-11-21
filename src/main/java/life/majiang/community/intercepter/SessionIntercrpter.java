@@ -27,18 +27,17 @@ public class SessionIntercrpter implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Cookie[] cookies = request.getCookies();
         String a = "token";
-        if (cookies !=null&&cookies.length!=0){
+        if (cookies != null && cookies.length != 0) {
             for (Cookie cookie : cookies) {
-                if (a.equals(cookie.getName()))
-                {
+                if (a.equals(cookie.getName())) {
                     String token = cookie.getValue();
                     UserExample userExample = new UserExample();
                     userExample.createCriteria().andTokenEqualTo(token);
                     List<User> users = userMapper.selectByExample(userExample);
-                    if (users.size()!=0){
-                        request.getSession().setAttribute("user",users.get(0));
+                    if (users.size() != 0) {
+                        request.getSession().setAttribute("user", users.get(0));
                         Long unreadCount = notificationService.unreadCount(users.get(0).getId());
-                        request.getSession().setAttribute("unreadCount",unreadCount);
+                        request.getSession().setAttribute("unreadCount", unreadCount);
                     }
                     break;
                 }

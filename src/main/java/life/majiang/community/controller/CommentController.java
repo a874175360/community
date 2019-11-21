@@ -23,13 +23,13 @@ public class CommentController {
     private CommentService commentService;
 
     @ResponseBody
-    @RequestMapping(value = "/comment",method = RequestMethod.POST)
-    public Object post(@RequestBody CommentCreateDTO commentCreateDTO, HttpServletRequest request){
-        User user= (User)request.getSession().getAttribute("user");
-        if (user==null){
+    @RequestMapping(value = "/comment", method = RequestMethod.POST)
+    public Object post(@RequestBody CommentCreateDTO commentCreateDTO, HttpServletRequest request) {
+        User user = (User) request.getSession().getAttribute("user");
+        if (user == null) {
             return ResultDTO.errorof(CustomizeErrorCode.NO_LOGIN);
         }
-        if (commentCreateDTO ==null || StringUtils.isBlank(commentCreateDTO.getContent())){
+        if (commentCreateDTO == null || StringUtils.isBlank(commentCreateDTO.getContent())) {
             return ResultDTO.errorof(CustomizeErrorCode.COMMENT_IS_EMPTY);
         }
 
@@ -41,13 +41,19 @@ public class CommentController {
         comment.setGmtModified(System.currentTimeMillis());
         comment.setCommentator(user.getId());
         comment.setLikeCount(0L);
-        commentService.insert(comment,user);
-        return ResultDTO.okOf();
+        commentService.insert(comment, user);
+        List<CommentDTO> comments = null;
+        if (commentCreateDTO.getType() == 1) {
+            comments = commentService.listByTargetId(commentCreateDTO.getParentId(), CommentTypeEnum.QUESTION);
+        } else {
+            comments = commentService.listByTargetId(commentCreateDTO.getParentId(), CommentTypeEnum.COMMENT);
+        }
+        return ResultDTO.okOf(comments);
     }
 
     @ResponseBody
-    @RequestMapping(value = "/comment/{id}",method = RequestMethod.GET)
-    public ResultDTO<List<CommentDTO>> comments(@PathVariable(name = "id") Long id){
+    @RequestMapping(value = "/comment/{id}", method = RequestMethod.GET)
+    public ResultDTO<List<CommentDTO>> comments(@PathVariable(name = "id") Long id) {
         List<CommentDTO> commentDTOS = commentService.listByTargetId(id, CommentTypeEnum.COMMENT);
         return ResultDTO.okOf(commentDTOS);
     }

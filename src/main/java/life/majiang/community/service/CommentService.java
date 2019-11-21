@@ -41,22 +41,22 @@ public class CommentService {
 
     @Transactional
     public void insert(Comment comment, User commentator) {
-        if (comment.getParentId() ==null ||comment.getParentId()==0){
-            throw  new CustomizeException(CustomizeErrorCode.TARGET_PARAM_NOT_FOUND);
+        if (comment.getParentId() == null || comment.getParentId() == 0) {
+            throw new CustomizeException(CustomizeErrorCode.TARGET_PARAM_NOT_FOUND);
         }
-        if (comment.getType()==null || !CommentTypeEnum.isExit(comment.getType())){
-            throw  new CustomizeException(CustomizeErrorCode.TYPE_PARAM_WRONG);
+        if (comment.getType() == null || !CommentTypeEnum.isExit(comment.getType())) {
+            throw new CustomizeException(CustomizeErrorCode.TYPE_PARAM_WRONG);
         }
-        if (comment.getType()==CommentTypeEnum.COMMENT.getType()){
+        if (comment.getType() == CommentTypeEnum.COMMENT.getType()) {
             //回复评论
             Comment dbcomment = commentMapper.selectByPrimaryKey(comment.getParentId());
-            if (dbcomment==null){
-                throw  new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
+            if (dbcomment == null) {
+                throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
             }
             commentMapper.insert(comment);
             //回复问题
             Qusetion qusetion = qusetionMapper.selectByPrimaryKey(dbcomment.getParentId());
-            if (qusetion==null){
+            if (qusetion == null) {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
 
@@ -67,10 +67,10 @@ public class CommentService {
             commentExtMapper.incCommentCount(parentComment);
             //创建一条通知
             createNotify(comment, dbcomment.getCommentator(), commentator.getName(), qusetion.getTitle(), NotificationTypeEnum.REPLY_COMMENT, qusetion.getId());
-        }else {
+        } else {
             //回复问题
             Qusetion qusetion = qusetionMapper.selectByPrimaryKey(comment.getParentId());
-            if (qusetion==null){
+            if (qusetion == null) {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
             comment.setCommentCount(0);
@@ -78,13 +78,12 @@ public class CommentService {
             qusetion.setCommentCount(1);
             qusetionExtMapper.incCommentCount(qusetion);
             //创建一条通知
-            createNotify(comment,qusetion.getCreator(), commentator.getName(),qusetion.getTitle(),NotificationTypeEnum.REPLY_QUESTION, qusetion.getId());
+            createNotify(comment, qusetion.getCreator(), commentator.getName(), qusetion.getTitle(), NotificationTypeEnum.REPLY_QUESTION, qusetion.getId());
         }
     }
 
     private void createNotify(Comment comment, Long receiver, String notifierName, String outerTitle, NotificationTypeEnum notificationType, Long outerId) {
-        if (receiver==comment.getCommentator())
-        {
+        if (receiver == comment.getCommentator()) {
             return;
         }
         Notification notification = new Notification();
@@ -107,13 +106,13 @@ public class CommentService {
                 .andTypeEqualTo(type.getType());
         commentExample.setOrderByClause("gmt_create desc");
         List<Comment> comments = commentMapper.selectByExample(commentExample);
-        if (comments.size()==0){
+        if (comments.isEmpty()) {
             return new ArrayList<>();
         }
         //java8新语法
         //获取去重的评论人
         Set<Long> commentors = comments.stream().map(comment -> comment.getCommentator()).collect(Collectors.toSet());
-        List<Long> userIds =new ArrayList<Long>();
+        List<Long> userIds = new ArrayList<Long>();
         userIds.addAll(commentors);
         //获取评论人并转换成MAP
         UserExample userExample = new UserExample();

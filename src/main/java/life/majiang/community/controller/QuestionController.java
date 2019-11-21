@@ -22,16 +22,16 @@ public class QuestionController {
     private CommentService commentService;
 
     @GetMapping("question/{id}")
-    public String question(@PathVariable(name = "id") Long id, Model model){
+    public String question(@PathVariable(name = "id") Long id, Model model) {
         //累加阅读数
         questionService.incView(id);
         QuestionDTO questionDTO = questionService.getById(id);
         List<QuestionDTO> relatedQuestions = questionService.selectRelated(questionDTO);
         List<CommentDTO> comments = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
 
-        model.addAttribute("question",questionDTO);
-        model.addAttribute("comments",comments);
-        model.addAttribute("relatedQuestions",relatedQuestions);
+        model.addAttribute("question", questionDTO);
+        model.addAttribute("comments", comments);
+        model.addAttribute("relatedQuestions", relatedQuestions);
         return "question";
     }
 }

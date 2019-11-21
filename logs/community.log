@@ -1,5 +1,460 @@
-2019-11-19 15:07:58.678  INFO 136552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-19 15:07:58.809  INFO 136552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-11-19 15:07:59.790  INFO 136552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-11-19 15:07:59.934  INFO 136552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2019-11-19 15:07:59.940  INFO 136552 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 6.438 seconds (JVM running for 9.008)
+2019-11-21 09:01:30.911  INFO 140892 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 140892 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:01:30.919  INFO 140892 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:01:31.038  INFO 140892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:01:31.038  INFO 140892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:01:33.208  INFO 140892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:01:33.208  INFO 140892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:01:33.208  INFO 140892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:01:33.208  INFO 140892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:01:33.208  INFO 140892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:01:33.208  INFO 140892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:01:33.302  INFO 140892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:01:33.505  INFO 140892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:01:33.505  INFO 140892 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2466 ms
+2019-11-21 09:01:34.411  INFO 140892 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:01:34.489  INFO 140892 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:01:35.130  INFO 140892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:01:35.192  INFO 140892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:01:35.192  INFO 140892 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 5.134 seconds (JVM running for 8.654)
+2019-11-21 09:01:43.986  INFO 140892 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:01:43.986  INFO 140892 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:01:44.006  INFO 140892 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-11-21 09:01:44.750  INFO 140892 --- [http-nio-8887-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:01:45.081  INFO 140892 --- [http-nio-8887-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:06:54.404  INFO 167756 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 167756 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:06:54.404  INFO 167756 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:06:54.526  INFO 167756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:06:54.526  INFO 167756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:06:56.065  INFO 167756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:06:56.073  INFO 167756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:06:56.074  INFO 167756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:06:56.076  INFO 167756 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:06:56.076  INFO 167756 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:06:56.077  INFO 167756 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:06:56.080  INFO 167756 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:06:56.226  INFO 167756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:06:56.226  INFO 167756 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1700 ms
+2019-11-21 09:06:56.903  INFO 167756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:06:56.966  INFO 167756 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:06:57.283  INFO 167756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:06:57.326  INFO 167756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:06:57.328  INFO 167756 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.591 seconds (JVM running for 5.558)
+2019-11-21 09:07:00.132  INFO 167756 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:07:00.133  INFO 167756 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:07:00.141  INFO 167756 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-11-21 09:07:00.233  INFO 167756 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:07:00.362  INFO 167756 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:14:07.434  INFO 141624 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 141624 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:14:07.434  INFO 141624 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:14:07.512  INFO 141624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:14:07.512  INFO 141624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:14:08.996  INFO 141624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:14:09.012  INFO 141624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:14:09.012  INFO 141624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:14:09.012  INFO 141624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:14:09.012  INFO 141624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:14:09.012  INFO 141624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:14:09.012  INFO 141624 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:14:09.231  INFO 141624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:14:09.231  INFO 141624 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1719 ms
+2019-11-21 09:14:10.355  INFO 141624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:14:10.433  INFO 141624 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:14:10.827  INFO 141624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:14:10.886  INFO 141624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:14:10.891  INFO 141624 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.989 seconds (JVM running for 5.624)
+2019-11-21 09:14:11.601  INFO 141624 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:14:11.602  INFO 141624 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:14:11.612  INFO 141624 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-21 09:14:11.700  INFO 141624 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:14:11.863  INFO 141624 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:26:43.887  INFO 173680 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 173680 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:26:43.887  INFO 173680 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:26:43.950  INFO 173680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:26:43.950  INFO 173680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:26:45.574  INFO 173680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:26:45.590  INFO 173680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:26:45.590  INFO 173680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:26:45.590  INFO 173680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:26:45.590  INFO 173680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:26:45.590  INFO 173680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:26:45.590  INFO 173680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:26:45.745  INFO 173680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:26:45.745  INFO 173680 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1795 ms
+2019-11-21 09:26:46.604  INFO 173680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:26:46.748  INFO 173680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:26:47.219  INFO 173680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:26:47.302  INFO 173680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:26:47.302  INFO 173680 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.895 seconds (JVM running for 6.527)
+2019-11-21 09:26:47.566  INFO 173680 --- [http-nio-8887-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:26:47.567  INFO 173680 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:26:47.582  INFO 173680 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-11-21 09:26:47.713  INFO 173680 --- [http-nio-8887-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:26:48.056  INFO 173680 --- [http-nio-8887-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:33:18.446  INFO 169360 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 169360 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:33:18.462  INFO 169360 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:33:18.571  INFO 169360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:33:18.571  INFO 169360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:33:20.172  INFO 169360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:33:20.182  INFO 169360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:33:20.182  INFO 169360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:33:20.182  INFO 169360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:33:20.182  INFO 169360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:33:20.182  INFO 169360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:33:20.198  INFO 169360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:33:20.371  INFO 169360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:33:20.371  INFO 169360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1800 ms
+2019-11-21 09:33:21.161  INFO 169360 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:33:21.239  INFO 169360 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:33:21.630  INFO 169360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:33:21.677  INFO 169360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:33:21.677  INFO 169360 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.842 seconds (JVM running for 5.746)
+2019-11-21 09:33:23.658  INFO 169360 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:33:23.658  INFO 169360 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:33:23.667  INFO 169360 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-21 09:33:23.740  INFO 169360 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:33:23.859  INFO 169360 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:39:31.252  INFO 138900 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 138900 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:39:31.268  INFO 138900 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:39:31.346  INFO 138900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:39:31.346  INFO 138900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:39:32.832  INFO 138900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:39:32.847  INFO 138900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:39:32.847  INFO 138900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:39:32.847  INFO 138900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:39:32.847  INFO 138900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:39:32.847  INFO 138900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:39:32.847  INFO 138900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:39:32.984  INFO 138900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:39:32.984  INFO 138900 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1638 ms
+2019-11-21 09:39:33.658  INFO 138900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:39:33.720  INFO 138900 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:39:33.939  INFO 138900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:39:34.001  INFO 138900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:39:34.001  INFO 138900 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.308 seconds (JVM running for 5.097)
+2019-11-21 09:39:46.327  INFO 138900 --- [http-nio-8887-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:39:46.328  INFO 138900 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:39:46.336  INFO 138900 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-11-21 09:39:46.407  INFO 138900 --- [http-nio-8887-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:39:46.532  INFO 138900 --- [http-nio-8887-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:42:04.657  INFO 171764 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 171764 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:42:04.657  INFO 171764 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:42:04.766  INFO 171764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:42:04.766  INFO 171764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:42:06.111  INFO 171764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:42:06.126  INFO 171764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:42:06.126  INFO 171764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:42:06.126  INFO 171764 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:42:06.126  INFO 171764 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:42:06.126  INFO 171764 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:42:06.126  INFO 171764 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:42:06.251  INFO 171764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:42:06.251  INFO 171764 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1485 ms
+2019-11-21 09:42:06.845  INFO 171764 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:42:06.923  INFO 171764 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:42:07.164  INFO 171764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:42:07.211  INFO 171764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:42:07.211  INFO 171764 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.212 seconds (JVM running for 4.995)
+2019-11-21 09:42:10.149  INFO 171764 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:42:10.149  INFO 171764 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:42:10.158  INFO 171764 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-21 09:42:10.266  INFO 171764 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:42:10.410  INFO 171764 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:43:13.501  INFO 110656 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 110656 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:43:13.501  INFO 110656 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:43:13.579  INFO 110656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:43:13.579  INFO 110656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:43:15.559  INFO 110656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:43:15.575  INFO 110656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:43:15.575  INFO 110656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:43:15.575  INFO 110656 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:43:15.575  INFO 110656 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:43:15.575  INFO 110656 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:43:15.591  INFO 110656 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:43:15.794  INFO 110656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:43:15.794  INFO 110656 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2215 ms
+2019-11-21 09:43:16.830  INFO 110656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:43:16.908  INFO 110656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:43:17.204  INFO 110656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:43:17.251  INFO 110656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:43:17.251  INFO 110656 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 4.49 seconds (JVM running for 6.48)
+2019-11-21 09:43:25.820  INFO 110656 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:43:25.821  INFO 110656 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:43:25.834  INFO 110656 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-11-21 09:43:25.949  INFO 110656 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:43:26.132  INFO 110656 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:45:49.150  INFO 174052 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 174052 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:45:49.150  INFO 174052 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:45:49.238  INFO 174052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:45:49.238  INFO 174052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:45:51.337  INFO 174052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:45:51.352  INFO 174052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:45:51.352  INFO 174052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:45:51.352  INFO 174052 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:45:51.352  INFO 174052 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:45:51.368  INFO 174052 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:45:51.368  INFO 174052 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:45:51.652  INFO 174052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:45:51.652  INFO 174052 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2414 ms
+2019-11-21 09:45:53.627  INFO 174052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:45:53.699  INFO 174052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:45:53.998  INFO 174052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:45:54.045  INFO 174052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:45:54.045  INFO 174052 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 5.533 seconds (JVM running for 7.612)
+2019-11-21 09:46:00.378  INFO 174052 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:46:00.378  INFO 174052 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:46:00.387  INFO 174052 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-21 09:46:00.480  INFO 174052 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:46:00.638  INFO 174052 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:54:16.939  INFO 95736 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 95736 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:54:16.955  INFO 95736 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:54:17.041  INFO 95736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:54:17.041  INFO 95736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:54:18.650  INFO 95736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:54:18.666  INFO 95736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:54:18.666  INFO 95736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:54:18.666  INFO 95736 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:54:18.666  INFO 95736 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:54:18.666  INFO 95736 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:54:18.666  INFO 95736 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:54:18.869  INFO 95736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:54:18.869  INFO 95736 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1828 ms
+2019-11-21 09:54:19.650  INFO 95736 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:54:19.728  INFO 95736 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:54:19.994  INFO 95736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:54:20.025  INFO 95736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:54:20.040  INFO 95736 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.753 seconds (JVM running for 5.684)
+2019-11-21 09:54:24.022  INFO 95736 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:54:24.022  INFO 95736 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:54:24.029  INFO 95736 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-11-21 09:54:24.103  INFO 95736 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:54:24.229  INFO 95736 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:55:25.571  INFO 175612 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 175612 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:55:25.586  INFO 175612 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:55:25.664  INFO 175612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:55:25.664  INFO 175612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:55:27.290  INFO 175612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:55:27.306  INFO 175612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:55:27.306  INFO 175612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:55:27.306  INFO 175612 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:55:27.306  INFO 175612 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:55:27.306  INFO 175612 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:55:27.322  INFO 175612 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:55:27.618  INFO 175612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:55:27.618  INFO 175612 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1954 ms
+2019-11-21 09:55:29.373  INFO 175612 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:55:29.467  INFO 175612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:55:29.810  INFO 175612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:55:29.873  INFO 175612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:55:29.889  INFO 175612 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 4.831 seconds (JVM running for 6.615)
+2019-11-21 09:55:32.717  INFO 175612 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:55:32.718  INFO 175612 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:55:32.732  INFO 175612 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-21 09:55:32.828  INFO 175612 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:55:33.074  INFO 175612 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 09:56:13.990  INFO 162012 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 162012 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 09:56:13.995  INFO 162012 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 09:56:14.089  INFO 162012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 09:56:14.090  INFO 162012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 09:56:15.915  INFO 162012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 09:56:15.915  INFO 162012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 09:56:15.915  INFO 162012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 09:56:15.915  INFO 162012 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 09:56:15.915  INFO 162012 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 09:56:15.915  INFO 162012 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 09:56:15.931  INFO 162012 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 09:56:16.041  INFO 162012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 09:56:16.041  INFO 162012 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1951 ms
+2019-11-21 09:56:16.666  INFO 162012 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 09:56:16.713  INFO 162012 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 09:56:17.047  INFO 162012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 09:56:17.120  INFO 162012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 09:56:17.123  INFO 162012 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.858 seconds (JVM running for 5.732)
+2019-11-21 09:56:18.027  INFO 162012 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 09:56:18.027  INFO 162012 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 09:56:18.036  INFO 162012 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-11-21 09:56:18.145  INFO 162012 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 09:56:18.369  INFO 162012 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:02:21.598  INFO 175892 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 175892 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:02:21.614  INFO 175892 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:02:21.708  INFO 175892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:02:21.708  INFO 175892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:02:23.222  INFO 175892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:02:23.222  INFO 175892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:02:23.222  INFO 175892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:02:23.222  INFO 175892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:02:23.222  INFO 175892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:02:23.222  INFO 175892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:02:23.238  INFO 175892 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:02:23.363  INFO 175892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:02:23.363  INFO 175892 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1655 ms
+2019-11-21 10:02:23.986  INFO 175892 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:02:24.059  INFO 175892 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:02:24.292  INFO 175892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:02:24.339  INFO 175892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:02:24.339  INFO 175892 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.318 seconds (JVM running for 4.98)
+2019-11-21 10:02:35.895  INFO 175892 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:02:35.896  INFO 175892 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:02:35.901  INFO 175892 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-11-21 10:02:35.975  INFO 175892 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:02:36.086  INFO 175892 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:04:35.718  INFO 175316 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 175316 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:04:35.718  INFO 175316 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:04:35.796  INFO 175316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:04:35.796  INFO 175316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:04:37.372  INFO 175316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:04:37.403  INFO 175316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:04:37.403  INFO 175316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:04:37.403  INFO 175316 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:04:37.403  INFO 175316 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:04:37.403  INFO 175316 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:04:37.403  INFO 175316 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:04:37.622  INFO 175316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:04:37.622  INFO 175316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1826 ms
+2019-11-21 10:04:38.416  INFO 175316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:04:38.494  INFO 175316 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:04:38.760  INFO 175316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:04:38.806  INFO 175316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:04:38.806  INFO 175316 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.608 seconds (JVM running for 5.86)
+2019-11-21 10:04:41.231  INFO 175316 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:04:41.232  INFO 175316 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:04:41.242  INFO 175316 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-21 10:04:41.349  INFO 175316 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:04:41.547  INFO 175316 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:08:22.685  INFO 175188 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 175188 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:08:22.700  INFO 175188 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:08:22.778  INFO 175188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:08:22.778  INFO 175188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:08:24.167  INFO 175188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:08:24.183  INFO 175188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:08:24.183  INFO 175188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:08:24.183  INFO 175188 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:08:24.183  INFO 175188 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:08:24.183  INFO 175188 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:08:24.183  INFO 175188 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:08:24.324  INFO 175188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:08:24.324  INFO 175188 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1546 ms
+2019-11-21 10:08:25.078  INFO 175188 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:08:25.158  INFO 175188 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:08:25.471  INFO 175188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:08:25.553  INFO 175188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:08:25.561  INFO 175188 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.503 seconds (JVM running for 5.209)
+2019-11-21 10:08:28.117  INFO 175188 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:08:28.117  INFO 175188 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:08:28.123  INFO 175188 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-11-21 10:08:28.190  INFO 175188 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:08:28.305  INFO 175188 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:10:10.192  INFO 175384 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 175384 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:10:10.192  INFO 175384 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:10:10.331  INFO 175384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:10:10.331  INFO 175384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:10:12.489  INFO 175384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:10:12.505  INFO 175384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:10:12.505  INFO 175384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:10:12.505  INFO 175384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:10:12.505  INFO 175384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:10:12.505  INFO 175384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:10:12.505  INFO 175384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:10:12.667  INFO 175384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:10:12.667  INFO 175384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2336 ms
+2019-11-21 10:10:13.400  INFO 175384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:10:13.463  INFO 175384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:10:13.791  INFO 175384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:10:13.838  INFO 175384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:10:13.838  INFO 175384 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 4.578 seconds (JVM running for 6.672)
+2019-11-21 10:10:15.826  INFO 175384 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:10:15.826  INFO 175384 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:10:15.837  INFO 175384 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-21 10:10:15.949  INFO 175384 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:10:16.142  INFO 175384 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:10:45.044  INFO 176996 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 176996 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:10:45.044  INFO 176996 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:10:45.153  INFO 176996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:10:45.153  INFO 176996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:10:46.768  INFO 176996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:10:46.784  INFO 176996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:10:46.784  INFO 176996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:10:46.784  INFO 176996 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:10:46.784  INFO 176996 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:10:46.784  INFO 176996 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:10:46.784  INFO 176996 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:10:46.940  INFO 176996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:10:46.956  INFO 176996 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1803 ms
+2019-11-21 10:10:47.546  INFO 176996 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:10:47.608  INFO 176996 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:10:47.858  INFO 176996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:10:47.905  INFO 176996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:10:47.921  INFO 176996 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.62 seconds (JVM running for 5.53)
+2019-11-21 10:10:54.333  INFO 176996 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:10:54.334  INFO 176996 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:10:54.342  INFO 176996 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-11-21 10:10:54.428  INFO 176996 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:10:54.555  INFO 176996 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:13:05.509  INFO 176680 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 176680 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:13:05.509  INFO 176680 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:13:05.650  INFO 176680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:13:05.650  INFO 176680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:13:06.992  INFO 176680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:13:06.994  INFO 176680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:13:06.994  INFO 176680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:13:06.994  INFO 176680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:13:06.994  INFO 176680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:13:06.994  INFO 176680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:13:06.994  INFO 176680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:13:07.134  INFO 176680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:13:07.134  INFO 176680 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1484 ms
+2019-11-21 10:13:07.712  INFO 176680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:13:07.774  INFO 176680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:13:08.024  INFO 176680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:13:08.079  INFO 176680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:13:08.079  INFO 176680 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.226 seconds (JVM running for 4.963)
+2019-11-21 10:13:15.666  INFO 176680 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:13:15.668  INFO 176680 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:13:15.676  INFO 176680 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-11-21 10:13:15.758  INFO 176680 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:13:15.870  INFO 176680 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:13:36.074  INFO 176372 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 176372 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:13:36.074  INFO 176372 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:13:36.177  INFO 176372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:13:36.177  INFO 176372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:13:37.697  INFO 176372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:13:37.697  INFO 176372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:13:37.697  INFO 176372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:13:37.697  INFO 176372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:13:37.697  INFO 176372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:13:37.697  INFO 176372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:13:37.713  INFO 176372 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:13:37.838  INFO 176372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:13:37.838  INFO 176372 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1661 ms
+2019-11-21 10:13:38.495  INFO 176372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:13:38.573  INFO 176372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:13:38.815  INFO 176372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:13:38.861  INFO 176372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:13:38.861  INFO 176372 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.566 seconds (JVM running for 5.409)
+2019-11-21 10:13:40.248  INFO 176372 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:13:40.249  INFO 176372 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:13:40.263  INFO 176372 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-11-21 10:13:40.381  INFO 176372 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:13:40.576  INFO 176372 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-11-21 10:14:08.608  INFO 176864 --- [restartedMain] l.m.community.CommunityApplication       : Starting CommunityApplication on LAPTOP-2M7ATNOG with PID 176864 (D:\DevolopeSpace\ideaProjects\javaweb\community\target\classes started by LIN in D:\DevolopeSpace\ideaProjects\javaweb\community)
+2019-11-21 10:14:08.624  INFO 176864 --- [restartedMain] l.m.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2019-11-21 10:14:08.718  INFO 176864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-21 10:14:08.718  INFO 176864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-21 10:14:10.319  INFO 176864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2019-11-21 10:14:10.319  INFO 176864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-21 10:14:10.319  INFO 176864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-21 10:14:10.319  INFO 176864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-11-21 10:14:10.319  INFO 176864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-11-21 10:14:10.319  INFO 176864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-11-21 10:14:10.334  INFO 176864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-11-21 10:14:10.459  INFO 176864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-21 10:14:10.459  INFO 176864 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1741 ms
+2019-11-21 10:14:11.092  INFO 176864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-21 10:14:11.155  INFO 176864 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-21 10:14:11.405  INFO 176864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-21 10:14:11.452  INFO 176864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2019-11-21 10:14:11.452  INFO 176864 --- [restartedMain] l.m.community.CommunityApplication       : Started CommunityApplication in 3.469 seconds (JVM running for 5.226)
+2019-11-21 10:14:13.108  INFO 176864 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-21 10:14:13.109  INFO 176864 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-21 10:14:13.120  INFO 176864 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-21 10:14:13.232  INFO 176864 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-11-21 10:14:13.376  INFO 176864 --- [http-nio-8887-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

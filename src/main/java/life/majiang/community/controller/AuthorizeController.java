@@ -6,6 +6,7 @@ import life.majiang.community.mapper.UserMapper;
 import life.majiang.community.model.User;
 import life.majiang.community.provider.GithubProvider;
 import life.majiang.community.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 @Controller
+@Slf4j
 public class AuthorizeController {
     @Autowired
     private GithubProvider githubProvider;
@@ -39,8 +41,8 @@ public class AuthorizeController {
     private UserService userService;
 
     @GetMapping("/callback")
-    public String callback(@RequestParam(name="code") String code,
-                           @RequestParam(name="state") String state,
+    public String callback(@RequestParam(name = "code") String code,
+                           @RequestParam(name = "state") String state,
                            HttpServletResponse response) throws IOException {
         AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
         accessTokenDTO.setClient_id(clientId);
@@ -50,7 +52,7 @@ public class AuthorizeController {
         accessTokenDTO.setState(state);
         String accessToken = githubProvider.getAccessToken(accessTokenDTO);
         GithubUser githubUser = githubProvider.getUser(accessToken);
-        if (githubUser!=null){
+        if (githubUser != null) {
             User user = new User();
             String token = UUID.randomUUID().toString();
             user.setToken(token);
@@ -58,18 +60,19 @@ public class AuthorizeController {
             user.setAccoutId(String.valueOf(githubUser.getId()));
             user.setAvatarUrl(githubUser.getAvatarUrl());
             userService.createOrUpdate(user);
-            response.addCookie(new Cookie("token",token));
+            response.addCookie(new Cookie("token", token));
             return "redirect:/";
-        }else {
+        } else {
+            log.error("callback get github error,{}", githubUser);
             //登录失败,chongxindenglu
             return "redirect:/";
         }
-
     }
+
     @GetMapping("/logout")
-    public String logout(HttpServletRequest request,HttpServletResponse response){
+    public String logout(HttpServletRequest request, HttpServletResponse response) {
         request.getSession().removeAttribute("user");
-        Cookie newCookie = new Cookie("token",null);
+        Cookie newCookie = new Cookie("token", null);
         newCookie.setMaxAge(0);
         response.addCookie(newCookie);
         return "redirect:/";

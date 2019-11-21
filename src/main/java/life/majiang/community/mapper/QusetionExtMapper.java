@@ -12,7 +12,9 @@ import java.util.List;
 @Component
 public interface QusetionExtMapper {
     int incView(Qusetion record);
+
     int incCommentCount(Qusetion record);
+
     List<Qusetion> selectRelated(Qusetion qusetion);
 
     Integer countBySearch(QuestionQueryDTO questionQueryDTO);
